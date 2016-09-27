@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/shape_corners_biankkuang"
+                >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_corners_biankkuang"
+        android:src="@drawable/nv3"/>
+    <ImageView
+        android:id="@+id/incude_iv1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/btna1"/>
+
+    <TextView
+        android:id="@+id/incude_tvcity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/incude_iv1"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/incude_iv1"
+        android:text="徐州市"
+        android:textColor="@color/colorRed"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/incude_tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/incude_iv1"
+        android:text="叮当"
+        android:textColor="@color/colorWrite"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:id="@+id/incude_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/shape_corners_green"
+        android:layout_alignTop="@+id/incude_tvname"
+        android:layout_toEndOf="@+id/incude_tvname">
+
+        <ImageView
+            android:id="@+id/incude_linear_iv"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+            android:layout_marginLeft="2dp"/>
+
+        <TextView
+            android:id="@+id/incude_linear_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textSize="10sp"
+            android:textColor="@color/colorWrite"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIVE   452"
+        android:textSize="11sp"
+        android:layout_marginRight="2dp"
+        android:textColor="@color/colorRed"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/incude_tvcity"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>

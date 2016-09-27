@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/home_rela1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioGroup
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_title"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@color/colorRed"
+                android:textSize="18sp"
+                />
+
+            <RadioButton
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_title"
+                android:button="@null"
+                android:gravity="center"
+                android:text="热门"
+                android:textColor="@color/colorGray"
+                android:textSize="18sp"
+                />
+
+            <RadioButton
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_title"
+                android:button="@null"
+                android:gravity="center"
+                android:text="最新"
+                android:textColor="@color/colorGray"
+                android:textSize="18sp"
+                />
+        </RadioGroup>
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/home_rela1">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

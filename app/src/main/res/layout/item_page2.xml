@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:imagecontrol="http://schemas.android.com/tools"
+                xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="380dp">
+
+    <ImageView
+        android:id="@+id/page2_item_ivbig"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="@drawable/nv4"/>
+
+    <!-- 没有指定圆形ImageView属性时，默认没有外边圆颜色 -->
+    <!-- 需要将图片资源自定为src ，或在程序中setImageResource(res) 不能设置background为图片，这样不能达到圆形效果-->
+    <!-- border_outside_color 外部圆圈的颜色 -->
+    <!-- border_inside_color 内部部圆圈的颜色 -->
+    <!-- border_thickness 外圆和内圆的宽度 -->
+    <com.bwie.jf.jflive.view.RoundImageView
+        android:id="@+id/page2_item_ivl"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/nv4"
+        imagecontrol:border_inside_color="#bc0978"
+        imagecontrol:border_outside_color="#ba3456"
+        imagecontrol:border_thickness="1dp"
+        />
+
+    <TextView
+        android:id="@+id/page2_item_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="我是流氓我怕谁"
+        android:textColor="@color/colorWrite"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/page2_item_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/page2_item_ivl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/page2_item_ivl"
+        android:text="师妹"
+        android:textColor="@color/colorWrite"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/page2_item_iv1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/btna2"
+        android:layout_alignStart="@+id/page2_item_tv2"
+        android:layout_below="@+id/page2_item_tv2"/>
+
+    <TextView
+        android:id="@+id/page2_item_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page2_item_tv2"
+        android:layout_toEndOf="@+id/page2_item_iv1"
+        android:text="难道在外星？"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/colorWrite"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/page2_item_btn"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_corners_red"
+        android:gravity="center"
+        android:text="Live    1000"
+        android:textColor="@color/colorRed"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

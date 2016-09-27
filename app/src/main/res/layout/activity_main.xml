@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/main_rela1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="128">
+
+        <RadioGroup
+            android:id="@+id/main_rg1"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_main"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@drawable/selector_title_textcolor"/>
+
+            <RadioButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="120dp"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_main1"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@drawable/selector_title_textcolor"/>
+        </RadioGroup>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/main_centerIv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/btna1"/>
+
+</RelativeLayout>
