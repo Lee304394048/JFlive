@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    android:id="@+id/main_relout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,6 +23,7 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/main_rb_1"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:button="@null"
@@ -32,6 +34,7 @@
                 android:textColor="@drawable/selector_title_textcolor"/>
 
             <RadioButton
+                android:id="@+id/main_rb_2"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="120dp"

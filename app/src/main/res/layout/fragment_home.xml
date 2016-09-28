@@ -15,6 +15,7 @@
             android:background="@drawable/li_home_search_left_bg"/>
 
         <RadioGroup
+            android:id="@+id/home_rg"
             android:layout_width="180dp"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
