@@ -53,6 +53,6 @@
         android:focusable="true"
         android:clickable="true"
         android:scaleType="fitXY"
-        android:src="@drawable/btna1"/>
+        android:src="@drawable/li_maintab_party_pic_selected"/>
 
 </RelativeLayout>
